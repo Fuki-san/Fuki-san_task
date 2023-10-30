@@ -1,0 +1,27 @@
+@charset "utf-i";
+
+.main {
+    margin: 20px;
+}
+
+.show {
+    border-bottom: 1px solid #919191;
+}
+
+.button-group {
+    display: flex;
+}
+
+.error {
+    color: red;
+}
+.all_task form{
+    display: inline-block;
+}
+.all_task {
+    list-style: none;
+}
+.task_list li{
+    display: inline-block;
+    padding: 5px 0;
+}
