@@ -35,7 +35,7 @@
             </p>
             <div class="button-group">
                 <button>更新</button>
-                <button type="button" onclick='location.href="{{ route('tasks.show', $task) }}"'>詳細に戻る</button>
+                <button  type="button"onclick='location.href="{{ route('tasks.show', $task) }}"'>詳細に戻る</button>
             </div>
         </form>
     </div>
