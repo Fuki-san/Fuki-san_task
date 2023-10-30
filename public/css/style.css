@@ -15,3 +15,13 @@
 .error {
     color: red;
 }
+.all_task form{
+    display: inline-block;
+}
+.all_task {
+    list-style: none;
+}
+.task_list li{
+    display: inline-block;
+    padding: 5px 0;
+}

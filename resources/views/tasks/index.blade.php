@@ -15,7 +15,16 @@
             <h1>タスク一覧</h1>
             <ul class="all_task">
                 @foreach ($tasks as $task)
-                    <li><a href="{{ route('tasks.show', $task) }}">{{ $task->title }}</a></li>
+                    <div class="task_list">
+                        <li><a href="{{ route('tasks.show', $task) }}">{{ $task->title }}</a></li>
+                        <form action="{{ route('tasks.destroy', $task) }}" method="post">
+                            @csrf
+                            @method('DELETE')
+                            <input type="submit" class="button" value="削除する"
+                                onclick='if(!confirm("削除しますか？")){return false};'>
+
+                        </form>
+                    </div>
                 @endforeach
             </ul>
         </div>
