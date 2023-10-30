@@ -1,0 +1,13 @@
+@charset "utf-i";
+
+.main {
+    margin: 20px;
+}
+
+.show {
+    border-bottom: 1px solid #919191;
+}
+
+.button-group {
+    display: flex;
+}
